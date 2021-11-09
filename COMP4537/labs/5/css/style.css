@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(16, 22, 25);
+}
+.container {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(23, 32, 33);
+}
+
+label {
+    color: lightblue;
+    font-size: large;
+    width: 100%;
+    display: inherit;
+    margin-top: 30px;
+}
+
+h1 {
+    width: 50%;
+    margin: 0 auto 50px auto;
+    color: lightblue;
+    text-align: center;
+}
+
+#successMessage{
+    color: green;
+    font-size: large;
+}
+
+.errorMessage {
+    color: red;
+    font-size: large;
+}
+
+textarea, .storePageInput {
+    width: 100%;
+    resize: vertical;
+    font-size: medium;
+}
+
+.searchPageInput {
+    width: 72%;
+    height: 30px;
+    resize: vertical;
+    font-size: medium;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+}
+
+.storePageButton{
+    width: 48%;
+    margin: 12px 0.5%;
+}
+.searchPageButton{
+    width: 25%;
+    margin: 12px 0.5%;
+}
