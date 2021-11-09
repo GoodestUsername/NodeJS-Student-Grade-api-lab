@@ -15,6 +15,13 @@ function validateInput(name) {
     }
 }
 
+// source https://stackoverflow.com/questions/14636536/how-to-check-if-a-variable-is-an-integer-in-javascript
+function isInt(value) {
+    return !isNaN(value) && 
+           parseInt(Number(value)) == value && 
+           !isNaN(parseInt(value, 10));
+}
+
 function post() {
     let name = document.getElementById("name").value;
     let score = document.getElementById("score").value;
@@ -25,7 +32,7 @@ function post() {
     }
     else { errorMsgname.style.display = "none"; }
 
-    if (score == "") {
+    if (score == "" || !isInt(score)) {
         errorMsgscore.style.display = "block";
         validDesc = false;
     }
@@ -48,13 +55,8 @@ function post() {
                 successMessage.style.display = "block";
                 errorMsgname.style.display = "none";
                 errorMsgscore.style.display = "none";
-                console.log("ASD")
             }
         }
-    // }
+    }
 }
 submit.onclick = post;
-
-document.getElementById("searchRedirectButton").onclick = function () {
-    location.href = "./readDB.html";
-};

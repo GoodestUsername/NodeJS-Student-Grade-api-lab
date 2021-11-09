@@ -9,7 +9,7 @@ body {
     background-color: rgb(23, 32, 33);
 }
 
-label {
+p, label {
     color: lightblue;
     font-size: large;
     width: 100%;
@@ -27,11 +27,13 @@ h1 {
 #successMessage{
     color: green;
     font-size: large;
+    display: none;
 }
 
 .errorMessage {
     color: red;
     font-size: large;
+    display: none;
 }
 
 textarea, .storePageInput {

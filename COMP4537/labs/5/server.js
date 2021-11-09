@@ -22,7 +22,17 @@ http.createServer(function(req, res){
     });
 
     if(req.method === GET){
+        let sql = "SELECT * FROM `score`";
 
+        con.query(sql, function(err, results){
+            if (err){ 
+              throw err;
+            }
+            console.log(results);
+            stuff_i_want = results;
+
+            res.end(JSON.stringify(stuff_i_want));
+        })
     }
 
     if(req.method === POST && req.url === endPointRoot + "store/"){

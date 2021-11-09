@@ -14,15 +14,15 @@
         <label for="name">name</label>
         <br>
         <input class="writePageInput" type="text" id="name" name="name" placeholder="Enter a Name"/>
-        <p hidden class ="errorMessage" id = "errorMsgName">name: </p>
+        <p class ="errorMessage" id = "errorMsgName">Please enter a name</p>
 
         <label for="score">Score: </label>
-        <p hidden class ="errorMessage" id = "errorMsgScore">Please enter a score</p>
         <br>
         <input class="writePageInput" type="text" id="score" name="score" placeholder="Enter a score"></input>
-
+        <br>
+        <p class ="errorMessage" id = "errorMsgScore">Please enter a score</p>
         <button class="storePageButton" id="submit">store in DB</button>
-        <p hidden id="successMessage">Entered new name and score</p>
+        <p id="successMessage">Entered new name and score</p>
     </div>
     <script src="../js/store.js"></script>
 </body>
