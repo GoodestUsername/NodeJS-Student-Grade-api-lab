@@ -1,6 +1,6 @@
 let submit = document.getElementById("submit");
 const xhttp = new XMLHttpRequest();
-const endPointRoot = "http://localhost:8080/COMP4537/labs/5/";
+const endPointRoot = "http://gurjotsandher.com/COMP4537/labs/5/";
 let resource = "store/";
 let errorMsgname = document.getElementById("errorMsgName");
 let errorMsgscore = document.getElementById("errorMsgScore");
@@ -62,5 +62,5 @@ function post() {
 submit.onclick = post;
 
 document.getElementById("indexRedirectButton").onclick = function () {
-    location.href = "../html/index.html";
+    location.href = "../html/readDB.html";
 };

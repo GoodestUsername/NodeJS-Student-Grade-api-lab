@@ -1,5 +1,5 @@
 const xhttp = new XMLHttpRequest();
-const endPointRoot = "http://localhost:8080/COMP4537/labs/5/";
+const endPointRoot = "http://gurjotsandher.com/COMP4537/labs/5/";
 let resource = "search/";
 
 const url = endPointRoot + resource;
@@ -26,5 +26,5 @@ setInterval(function () {
     };
 }, 2000);
 document.getElementById("indexRedirectButton").onclick = function () {
-    location.href = "../html/index.html";
+    location.href = "../html/writeDB.html";
 };
