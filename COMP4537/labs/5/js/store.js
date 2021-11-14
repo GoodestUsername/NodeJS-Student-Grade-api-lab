@@ -60,3 +60,7 @@ function post() {
     }
 }
 submit.onclick = post;
+
+document.getElementById("indexRedirectButton").onclick = function () {
+    location.href = "../html/index.html";
+};

@@ -25,3 +25,6 @@ setInterval(function () {
         }
     };
 }, 2000);
+document.getElementById("indexRedirectButton").onclick = function () {
+    location.href = "../html/index.html";
+};
